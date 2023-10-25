@@ -1,0 +1,5 @@
+node_modules
+build_old
+.secret
+build
+.env

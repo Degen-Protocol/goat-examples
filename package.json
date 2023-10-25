@@ -1,0 +1,31 @@
+{
+  "name": "truffle-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.4.3",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
+    "truffle-contract-size": "^2.0.1"
+  },
+  "devDependencies": {
+    "truffle-plugin-verify": "^0.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stronghands-Dev-Team/truffle-template.git"
+  },
+  "author": "Stronghands Dev Team",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Stronghands-Dev-Team/truffle-template/issues"
+  },
+  "homepage": "https://github.com/Stronghands-Dev-Team/truffle-template#readme"
+}
