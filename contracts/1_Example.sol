@@ -15,7 +15,8 @@ contract Battery is Whitelist {
     // CONFIGURABLES & CONSTANTS //
     ///////////////////////////////
 
-    uint256 public feeRecipient;
+    address public feeRecipient;
+    
     uint256 public lastCallTimestamp;
 
     ////////////////////////////
@@ -94,5 +95,13 @@ contract Battery is Whitelist {
     // Entirely redeem all GOAT into WPLS
     function discharge() external onlyWhitelisted() {
         GOAT.redeemTo(GOAT.balanceOf(address(this)), address(this));
+    }
+
+    //////////////////////////
+    // OWNER-ONLY FUNCTIONS //
+    //////////////////////////
+
+    function setFeeRecipient(address addr) external onlyOwner() {
+        feeRecipient = addr;
     }
 }
